@@ -44,7 +44,7 @@ const Header = () => {
               </li>
             ))}
             <li>
-              <a href="https://wa.me/919842250600" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', textDecoration: 'none', display: 'inline-block' }}>
+              <a href="https://wa.me/919840420600" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '0.5rem 1rem', textDecoration: 'none', display: 'inline-block' }}>
                 Get Quote
               </a>
             </li>
@@ -87,7 +87,7 @@ const Header = () => {
               </li>
             ))}
             <li>
-              <a href="https://wa.me/919842250600" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ width: '100%', textAlign: 'center', display: 'block', textDecoration: 'none' }} onClick={() => setIsMenuOpen(false)}>
+              <a href="https://wa.me/919840420600" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ width: '100%', textAlign: 'center', display: 'block', textDecoration: 'none' }} onClick={() => setIsMenuOpen(false)}>
                 Get Quote
               </a>
             </li>
