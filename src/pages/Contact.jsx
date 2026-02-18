@@ -12,11 +12,11 @@ const Contact = () => {
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem' }}>
-        
+
         {/* Contact Info */}
         <div>
           <h2 style={{ marginBottom: '2rem' }}>Get In Touch</h2>
-          
+
           <div className="flex" style={{ flexDirection: 'column', gap: '2rem' }}>
             <div className="flex gap-4">
               <div style={{ backgroundColor: 'var(--primary-light)', padding: '1rem', borderRadius: '0.5rem', color: 'var(--primary)' }}>
@@ -53,7 +53,7 @@ const Contact = () => {
               </div>
             </div>
 
-             <div className="flex gap-4">
+            <div className="flex gap-4">
               <div style={{ backgroundColor: 'var(--primary-light)', padding: '1rem', borderRadius: '0.5rem', color: 'var(--primary)' }}>
                 <Clock size={24} />
               </div>
@@ -78,7 +78,7 @@ const Contact = () => {
               <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Your Email</label>
               <input type="email" placeholder="john@example.com" style={{ width: '100%', padding: '0.75rem', borderRadius: '0.5rem', border: '1px solid var(--border-color)' }} />
             </div>
-             <div>
+            <div>
               <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Subject</label>
               <input type="text" placeholder="Inquiry about..." style={{ width: '100%', padding: '0.75rem', borderRadius: '0.5rem', border: '1px solid var(--border-color)' }} />
             </div>
@@ -91,10 +91,19 @@ const Contact = () => {
         </div>
 
       </div>
-      
-      {/* Map Placeholder */}
-      <div style={{ marginTop: '4rem', height: '400px', backgroundColor: '#e2e8f0', borderRadius: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <p style={{ color: '#64748B', fontSize: '1.5rem', fontWeight: 600 }}>Google Map Integration</p>
+
+      {/* Map Integration */}
+      <div style={{ marginTop: '4rem', height: '450px', borderRadius: '1rem', overflow: 'hidden' }}>
+        <iframe
+          src="https://maps.google.com/maps?q=Aazhi%20Dental%20Care%2C%20Coimbatore&t=&z=17&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Gomathi Surgicals Location"
+        ></iframe>
       </div>
 
     </div>
