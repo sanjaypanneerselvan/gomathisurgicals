@@ -18,7 +18,7 @@ const About = () => {
           <div>
             <h2 style={{ marginBottom: '1.5rem' }}>Who We Are</h2>
             <p style={{ marginBottom: '1rem', color: 'var(--text-light)' }}>
-               Pharma & Surgicals is a pGomathiremier wholesale distributor based at Coimbatore. We specialize in providing high-quality Surgical Products, Oxygen Concentrators, Dental Instruments, and Hospital Furniture to healthcare institutions.
+               Pharma & Surgicals is a premier wholesale distributor based at Coimbatore. We specialize in providing high-quality Surgical Products, Oxygen Concentrators, Dental Instruments, and Hospital Furniture to healthcare institutions.
             </p>
             <p style={{ marginBottom: '1rem', color: 'var(--text-light)' }}>
               Under the leadership of M. Thirumalai Raja, we have established ourselves as a reliable partner for hospitals, clinics, and dental care centers. Our commitment to genuine products and timely service ensures that healthcare providers can focus on what matters most — patient care.
