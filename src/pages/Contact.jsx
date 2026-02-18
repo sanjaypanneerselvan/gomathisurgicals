@@ -69,24 +69,34 @@ const Contact = () => {
         {/* Contact Form */}
         <div style={{ backgroundColor: 'var(--light-gray)', padding: '2.5rem', borderRadius: '1rem' }}>
           <h2 style={{ marginBottom: '1.5rem' }}>Send Us a Message</h2>
-          <form style={{ display: 'grid', gap: '1.5rem' }}>
+          <form style={{ display: 'grid', gap: '1.5rem' }} onSubmit={(e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+
+            const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+            window.open(`https://wa.me/919840420600?text=${whatsappMessage}`, '_blank');
+          }}>
             <div>
               <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Your Name</label>
-              <input type="text" placeholder="John Doe" style={{ width: '100%', padding: '0.75rem', borderRadius: '0.5rem', border: '1px solid var(--border-color)' }} />
+              <input name="name" type="text" placeholder="John Doe" required style={{ width: '100%', padding: '0.75rem', borderRadius: '0.5rem', border: '1px solid var(--border-color)' }} />
             </div>
             <div>
               <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Your Email</label>
-              <input type="email" placeholder="john@example.com" style={{ width: '100%', padding: '0.75rem', borderRadius: '0.5rem', border: '1px solid var(--border-color)' }} />
+              <input name="email" type="email" placeholder="john@example.com" required style={{ width: '100%', padding: '0.75rem', borderRadius: '0.5rem', border: '1px solid var(--border-color)' }} />
             </div>
             <div>
               <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Subject</label>
-              <input type="text" placeholder="Inquiry about..." style={{ width: '100%', padding: '0.75rem', borderRadius: '0.5rem', border: '1px solid var(--border-color)' }} />
+              <input name="subject" type="text" placeholder="Inquiry about..." required style={{ width: '100%', padding: '0.75rem', borderRadius: '0.5rem', border: '1px solid var(--border-color)' }} />
             </div>
             <div>
               <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>Message</label>
-              <textarea rows="4" placeholder="How can we help you?" style={{ width: '100%', padding: '0.75rem', borderRadius: '0.5rem', border: '1px solid var(--border-color)', fontFamily: 'inherit' }}></textarea>
+              <textarea name="message" rows="4" placeholder="How can we help you?" required style={{ width: '100%', padding: '0.75rem', borderRadius: '0.5rem', border: '1px solid var(--border-color)', fontFamily: 'inherit' }}></textarea>
             </div>
-            <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>Send Message</button>
+            <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>Send Message via WhatsApp</button>
           </form>
         </div>
 
