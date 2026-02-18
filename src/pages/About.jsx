@@ -18,15 +18,18 @@ const About = () => {
           <div>
             <h2 style={{ marginBottom: '1.5rem' }}>Who We Are</h2>
             <p style={{ marginBottom: '1rem', color: 'var(--text-light)' }}>
-               Gomathi Pharma & Surgicals is a premier wholesale distributor based at Coimbatore. We specialize in providing high-quality Surgical Products, Oxygen Concentrators, Dental Instruments, and Hospital Furniture to healthcare institutions.
+              Gomathi Pharma & Surgicals is a premier wholesale distributor based at Coimbatore. We specialize in providing high-quality Surgical Products, Oxygen Concentrators, Dental Instruments, and Hospital Furniture to healthcare institutions.
             </p>
             <p style={{ marginBottom: '1rem', color: 'var(--text-light)' }}>
               Under the leadership of M. Thirumalai Raja, we have established ourselves as a reliable partner for hospitals, clinics, and dental care centers. Our commitment to genuine products and timely service ensures that healthcare providers can focus on what matters most — patient care.
             </p>
           </div>
-          <div style={{ backgroundColor: 'var(--light-gray)', height: '300px', borderRadius: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-             {/* Placeholder for About Image */}
-             <span style={{ fontSize: '4rem' }}>🏥</span>
+          <div style={{ height: '300px', borderRadius: '1rem', overflow: 'hidden' }}>
+            <img
+              src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=1200"
+              alt="Medical Warehouse"
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
           </div>
         </div>
 
@@ -41,7 +44,7 @@ const About = () => {
             </p>
           </div>
           <div style={{ padding: '2rem', border: '1px solid var(--border-color)', borderRadius: '1rem' }}>
-             <div className="flex items-center gap-3" style={{ marginBottom: '1rem', color: 'var(--secondary)' }}>
+            <div className="flex items-center gap-3" style={{ marginBottom: '1rem', color: 'var(--secondary)' }}>
               <Eye size={32} />
               <h3>Our Vision</h3>
             </div>
